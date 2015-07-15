@@ -3,9 +3,16 @@
 
 ####Definition and Usage
 
-The join() method joins the elements of an array into a string, and returns the string.
+The substring() method extracts the characters from a string, between two specified indices, and returns the new sub string.
 
-The elements will be separated by a specified separator. The default separator is comma (,).
+This method extracts the characters in a string between "start" and "end", not including "end" itself.
+
+If "start" is greater than "end", this method will swap the two arguments, meaning str.substring(1,4) == str.substring(4,1).
+
+If either "start" or "stop" is less than 0, it is treated as if it were 0.
+
+Note: The substring() method does not change the original string.
+
 ####Example
 
 Extract characters from a string:
