@@ -1,0 +1,84 @@
+
+/*
+Margin auto ONLY works on block level elements.
+The browser sets the margin based on the width.
+*/
+.block-centering {
+  height           : 200px;
+  width            : 500px;
+  margin           : auto;
+
+  background-color : red;
+}
+
+/*
+Margin auto does NOT work on an inline block level element.
+*/
+.inline-block-centering {
+  display          : inline-block;
+
+  height           : 200px;
+  width            : 200px;
+  margin           : auto;
+
+  background-color : red;
+}
+
+/*
+Text-align center ONLY works on the parent of inline/inline-block elements
+*/
+.li-centering {
+  text-align : center;
+}
+
+ul {
+  margin          : 0;
+  padding         : 0;
+
+  list-style-type : none;
+}
+
+li {
+  display : inline-block
+}
+
+/*
+vertical centering example with inline block level elements
+*/
+.vertical-inline-block-centering {
+  height           : 200px;
+
+  background-color : red;
+  line-height      : 200px;
+}
+
+.circle {
+  display          : inline-block;
+  vertical-align   : middle;
+  ho
+  height           : 50px;
+  width            : 50px;
+
+  background-color : blue;
+  border-radius    : 25px;
+}
+
+/*
+vertical centering example with block level elements
+*/
+.vertical-block-centering {
+  display          : table;
+
+  height           : 200px;
+  width            : 500px;
+
+  background-color : red;
+}
+
+.inner {
+  display        : table-cell;
+  vertical-align : middle;
+
+  height         : 50px;
+  width          : 50px;
+}

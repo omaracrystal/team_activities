@@ -41,7 +41,16 @@ function TextAlert(tagName, index) {
 
 TextAlert("li", 0);
 TextAlert("li", 1);
-TextAlert("li", 2);
+
+// //another way
+// function clickLog(tagName, index)
+//   var list = document.getElementsByTagName(tagName);
+//   list[index].addEventListener("click", function() {
+//   alert(list[index].innerHTML);
+//   });
+// }
+
+// clickLog("li", 2);
 
 
 
